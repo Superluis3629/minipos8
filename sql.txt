@@ -1,0 +1,34 @@
+Database table (Model)
+    - Store: ເກັບລາຍການສິິນຄ້າ
+        - name
+        - image
+        - amount
+        - price_buy
+        - price_sell
+    - Transection: ເກັບການເຄື່ອນໄຫວ (ເພື່ນສິນຄ້າ, ຂາຍສິນຄ້າ...)
+        - tran_id
+        - product_id
+        - tran_type
+        - amount
+        - price
+        - tran_detail
+    - User: ເກັບຂໍ້ມູນຜູ້ໃຊ້
+        - name
+        - email
+        - password
+    - Bills: ເກັບຂໍ້ມູນໃບບີນ
+        - bill_id
+        - customer_name
+        - custormer_tel
+    - BillsList: ເກັບລາຍການໃບບີນ 
+        - bill_id
+        - name
+        - amount
+        - price
+
+Controller ຈັດການ ຄຳນວນ, ເພີ່ມ, ແກ້ໄຂ, ອັບເດດ, ລົບ
+    - BillsController: ຈັດການຂໍ້ມູນ ກ່ຽວກັບໃບບີນ
+    - StoreController: ຈັດການກັບຂໍ້ມູນກສິນຄ້າ
+    - TransectionController: ຈັດການການເຄື່ອນໄຫວ
+    - UserController: ຈັດການຜູ້ໃຊ້
+    - ReportController: ຈັດການຂໍ້ມູນລາຍງານ

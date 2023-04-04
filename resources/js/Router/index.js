@@ -7,14 +7,14 @@ import Report from "../pages/Report.vue";
 
 export const routes = [
     { 
-        name: "home",
-        path: "/",
-        component: Home
-    },
-    { 
         name: "store",
         path: "/store",
         component: Store
+    },
+    { 
+        name: "home",
+        path: "/home",
+        component: Home
     },
     { 
         name: "transection",

@@ -49,302 +49,29 @@
                 <div class="menu-inner-shadow"></div>
                 <ul class="menu-inner py-1">
                     <li class="menu-item active">
-                        <a href="index.htm" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                            <div>Dashboard</div>
-                        </a>
+                        <router-link to="/store" class="menu-link">
+                            <i class="menu-icon bx bx-store"></i>
+                            <div>ສະຕ໊ອກສີນຄ້າ</div>
+                        </router-link>
                     </li>
-                    <li class="menu-item " :class="MainMenu1">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle" @click="MainMenu1?MainMenu1='':MainMenu1='open'">
-                            <i class="menu-icon tf-icons bx bx-layout"></i>
-                            <div>Layouts</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="layouts/without-menu.html" class="menu-link">
-                                    <div>Without menu</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="layouts/container.html" class="menu-link">
-                                    <div>Container</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="layouts/fluid.html" class="menu-link">
-                                    <div>Fluid</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="layouts/blank.html" class="menu-link" target="_blank">
-                                    <div>Blank</div>
-                                </a>
-                            </li>
-                        </ul>
+                    <li class="menu-item">
+                        <router-link to="/home" class="menu-link">
+                            <i class="menu-icon bx bx-cart-add"></i>
+                            <div>ຂາຍ POS</div>
+                        </router-link>
                     </li>
-                    <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Pages</span>
+                    <li class="menu-item">
+                        <router-link to="/transection" class="menu-link">
+                            <i class="menu-icon bx bx-bar-chart-alt-2"></i>
+                            <div>ການເຄື່ອນໄຫວ</div>
+                        </router-link>
                     </li>
-                    <li class="menu-item " :class="MainMenu2">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle" @click="MainMenu2?MainMenu2='':MainMenu2='open'">
-                            <i class="menu-icon tf-icons bx bx bx-dock-top"></i>
-                            <div>Account Settings</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="pages/account-settings-account.html" class="menu-link">
-                                    <div>Account</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="pages/account-settings-notifications.html" class="menu-link">
-                                    <div>Notifications</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="pages/account-settings-connections.html" class="menu-link">
-                                    <div>Connections</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                            <div>Authentications</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="auth/login-basic.html" class="menu-link" target="_blank">
-                                    <div>Login</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="auth/register-basic.html" class="menu-link" target="_blank">
-                                    <div>Register</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="auth/forgot-password-basic.html" class="menu-link" target="_blank">
-                                    <div>Forgot Password</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                            <div>Misc</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="pages/misc-error.html" class="menu-link" target="_blank">
-                                    <div>Error</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="pages/misc-under-maintenance.html" class="menu-link" target="_blank">
-                                    <div>Under Maintenance</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Components</span>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="cards/basic.html" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-collection"></i>
-                            <div>Cards</div>
-                        </a>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-box"></i>
-                            <div>User interface</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="ui/accordion.html" class="menu-link">
-                                    <div>Accordion</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/alerts.html" class="menu-link">
-                                    <div>Alerts</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/badges.html" class="menu-link">
-                                    <div>Badges</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/buttons.html" class="menu-link">
-                                    <div>Buttons</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/carousel.html" class="menu-link">
-                                    <div>Carousel</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/collapse.html" class="menu-link">
-                                    <div>Collapse</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/dropdowns.html" class="menu-link">
-                                    <div>Dropdowns</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/footer.html" class="menu-link">
-                                    <div>Footer</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/list-groups.html" class="menu-link">
-                                    <div>List groups</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/modals.html" class="menu-link">
-                                    <div>Modals</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/navbar.html" class="menu-link">
-                                    <div>Navbar</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/offcanvas.html" class="menu-link">
-                                    <div>Offcanvas</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/pagination-breadcrumbs.html" class="menu-link">
-                                    <div>Pagination &amp; Breadcrumbs</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/progress.html" class="menu-link">
-                                    <div>Progress</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/spinners.html" class="menu-link">
-                                    <div>Spinners</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/tabs-pills.html" class="menu-link">
-                                    <div>Tabs &amp; Pills</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/toasts.html" class="menu-link">
-                                    <div>Toasts</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/tooltips-popovers.html" class="menu-link">
-                                    <div>Tooltips &amp; popovers</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="ui/typography.html" class="menu-link">
-                                    <div>Typography</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-copy"></i>
-                            <div>Extended UI</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="extended/ui-perfect-scrollbar.html" class="menu-link">
-                                    <div>Perfect scrollbar</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="extended/ui-text-divider.html" class="menu-link">
-                                    <div>Text Divider</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="icons/boxicons.html" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-crown"></i>
-                            <div>Boxicons</div>
-                        </a>
-                    </li>
-                    <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Forms &amp; Tables</span>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-detail"></i>
-                            <div>Form Elements</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="forms/basic-inputs.html" class="menu-link">
-                                    <div>Basic Inputs</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="forms/input-groups.html" class="menu-link">
-                                    <div>Input groups</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-detail"></i>
-                            <div>Form Layouts</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item ">
-                                <a href="form/layouts-vertical.html" class="menu-link">
-                                    <div>Vertical Form</div>
-                                </a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="form/layouts-horizontal.html" class="menu-link">
-                                    <div>Horizontal Form</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="tables/basic.html" class="menu-link">
-                            <i class="menu-icon tf-icons bx bx-table"></i>
-                            <div>Tables</div>
-                        </a>
-                    </li>
-                    <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Misc</span>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="https://themeselection.com/support/" class="menu-link" target="_blank">
-                            <i class="menu-icon tf-icons bx bx-support"></i>
-                            <div>Support</div>
-                        </a>
-                    </li>
-                    <li class="menu-item ">
-                        <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/laravel-introduction.html" class="menu-link" target="_blank">
-                            <i class="menu-icon tf-icons bx bx-file"></i>
-                            <div>Documentation</div>
-                        </a>
-                    </li>
+                    <li class="menu-item">
+                        <router-link to="/report" class="menu-link">
+                            <i class="menu-icon bx bx-receipt"></i>
+                            <div>ລາຍງານ</div>
+                        </router-link>
+                    </li>        
                 </ul>
             </aside>
             <!-- Layout page -->
@@ -436,10 +163,15 @@
                     </div>
 
                 </nav>
-                <!-- / Navbar -->
-                <!-- END: Navbar-->
-                <!-- Content wrapper -->
-                
+                <!-- End Navbar -->
+                <!-- Content-wrapper -->
+                <div class="content-wrapper">
+                    <div class="container-xxl flex-grow-1 container-p-y">
+
+                        <router-view/>
+
+                    </div>
+                </div>
                 <!--/ Content wrapper -->
             </div>
             <!-- / Layout page -->

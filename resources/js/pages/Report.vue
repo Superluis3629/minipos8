@@ -1,6 +1,11 @@
 <template>
     <div>
         <h1>Page Report</h1>
+        <h1>Page Report</h1>
+        <h1>Page Report</h1>
+        <h1>Page Report</h1>
+        <h1>Page Report</h1>
+        <h1>Page Report</h1>
     </div>
 </template>
 
